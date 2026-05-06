@@ -1,4 +1,3 @@
-
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -513,6 +512,50 @@ html, body {
     transform: translateY(0);
   }
 }
+    /* =========================
+   HERO
+========================= */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #5dade2, #48c9b0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  padding: 20px;
+  animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.hero-btn {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 14px;
+  background: white;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
     </style>
 
 </head>
@@ -520,21 +563,35 @@ html, body {
 <body>
 <div class="wrapper">
   <script src="script.js"></script>
-<header>
-  <h1 class="title">Bienvenue à l'ICP</h1>
-  <div class="icons">❤️ 🫁</div>
+<section class="hero">
+  <div class="hero-overlay">
 
-  <p>Bloc opératoire – Accueil des étudiants IADE</p>
-</header>
+    <h1>Bienvenue au bloc opératoire</h1>
+    <p>Institut Cœur Poumon – Accueil des étudiants IADE</p>
+
+    <button class="hero-btn" onclick="openLoginPopup()">
+      🎓 Accès étudiant
+    </button>
+
+  </div>
+</section>
 
 <!-- 🔐 PAGE DE CONNEXION -->
-<div id="loginPage" class="login">
-  <h2>Accès réservé</h2>
-  <input type="password" id="password" placeholder="Mot de passe">
-  <button onclick="checkPassword()">Entrer</button>
-  <p id="error" style="color:red;"></p>
-</div>
 
+<div id="loginPopup" class="popup">
+  <div class="popup-content">
+
+    <button class="close-btn" onclick="closePopup('loginPopup')">✖️</button>
+
+    <h2>🎓 Accès étudiant</h2>
+
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="checkPassword()">Entrer</button>
+
+    <p id="error" style="color:red;"></p>
+
+  </div>
+</div>
 <!-- DISCLAIMER -->
 <div id="disclaimer" class="disclaimer-overlay">
   <div class="disclaimer-box">
@@ -913,34 +970,24 @@ function toggleMenu(id) {
   });
 }
   
-  function checkPassword() {
+  function openLoginPopup() {
+  openPopup("loginPopup");
+}
+
+function checkPassword() {
   const password = document.getElementById("password").value;
 
   if (password === "iadeicp543") {
-    
-    const login = document.getElementById("loginPage");
+
+    closePopup("loginPopup");
+
     const disclaimer = document.getElementById("disclaimer");
-
-    // 🔥 fade out login
-    login.classList.add("hide");
-
-    // attendre la fin de l'animation
-    setTimeout(() => {
-      login.classList.add("hidden");
-
-      // 🔥 afficher disclaimer avec animation
-      disclaimer.classList.add("show");
-    }, 400);
+    disclaimer.classList.add("show");
 
   } else {
     document.getElementById("error").innerText = "Mot de passe incorrect";
   }
-  }
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.querySelector(".icons").classList.add("show");
-  }, 800);
-});
+}
 
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
