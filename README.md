@@ -519,10 +519,11 @@ html, body {
 
 <body>
 <div class="wrapper">
+  <script src="script.js"></script>
 <header>
   <h1 class="title">Bienvenue à l'ICP</h1>
   <div class="icons">❤️ 🫁</div>
-<script src="script.js"></script>
+
   <p>Bloc opératoire – Accueil des étudiants IADE</p>
 </header>
 
