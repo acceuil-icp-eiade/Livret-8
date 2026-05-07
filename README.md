@@ -4,7 +4,7 @@
   <link rel="manifest" href="manifest.json">
 
 <meta name="theme-color" content="#1e3a8a">
-<link rel="apple-touch-icon" href="icon.png">
+<link rel="apple-touch-icon" href="logo.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta charset="UTF-8">
