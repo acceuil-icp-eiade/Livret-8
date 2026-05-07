@@ -266,6 +266,9 @@ box-sizing: border-box;
   transform: scale(0.97);
   transition: 0.1s;
 }
+    * {
+  box-sizing: border-box;
+    }
 /* =========================
    POPUP BASE
 ========================= */
