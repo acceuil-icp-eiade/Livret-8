@@ -950,7 +950,7 @@ Certains contenus nécessitent un accès au réseau hospitalier
     <div class="card" id="documents">
   <h2>📄 Accès rapide aux documents</h2><i>(source principale  RFE SFAR)</i>
   <p class="hint">👉 Appuyez sur retour pour revenir au site</p>
-  </div>
+  
   
 <div>
   <div class="btn" onclick="toggleMenu('chirMenu')">
@@ -1059,6 +1059,7 @@ href="pdf/anatomiepulmonaire.pdf" target="_blank">
 <a class="btn bilan" href="pdf/Bilandemistage.pdf" target="_blank">
       ✒️ bilan de demi-stage
     </a>
+    </div>
   <div class="card">
     <h2>💬 Petit mot pour vous</h2>
     <p>
