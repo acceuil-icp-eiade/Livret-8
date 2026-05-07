@@ -73,48 +73,146 @@ header p {
   transform: scale(1);
   animation: float 2s infinite ease-in-out;
 }
-
 /* =========================
-   4. LOGIN
+   LOGIN POPUP IOS PREMIUM
 ========================= */
-.login {
+
+.login-modal {
+  position: fixed;
+  inset: 0;
+
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  animation: fadeIn 0.6s ease;
+
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(12px);
+
+  z-index: 9999;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s ease;
 }
 
-input {
-  padding: 14px;
-  margin: 5px;
-  border-radius: 12px;
-  border: none;
-  width: 240px;
+.login-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* BOX */
+.login-box {
+  width: 90%;
+  max-width: 340px;
+
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+
+  border-radius: 28px;
+
+  padding: 28px 22px;
+
   text-align: center;
-  font-size: 16px;
-  background: #eef2f7;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.15),
+    inset 0 1px 1px rgba(255,255,255,0.4);
+
+  transform: translateY(40px) scale(0.92);
+  transition: 0.35s ease;
 }
 
-button {
-  padding: 14px 20px;
+/* animation popup */
+.login-modal.show .login-box {
+  transform: translateY(0) scale(1);
+}
+
+/* TITRE */
+.login-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* INPUT IOS */
+.login-box input {
+  width: 100%;
+  padding: 16px;
+
   border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #3498db, #5dade2);
-  color: white;
-  font-weight: bold;
+  outline: none;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.7);
+
   font-size: 16px;
+  text-align: center;
+
   margin-top: 10px;
-  transition: 0.2s;
+
+  box-shadow:
+    inset 0 2px 6px rgba(0,0,0,0.05);
 }
 
-button:active {
-  transform: scale(0.97);
+/* BOUTON PRINCIPAL */
+.login-box button {
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  border-radius: 18px;
+
+  margin-top: 14px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
 }
 
-button:hover {
-  filter: brightness(1.1);
+/* bouton entrer */
+.login-box button:first-of-type {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+
+  box-shadow:
+    0 6px 18px rgba(37,99,235,0.35);
 }
+
+/* bouton annuler */
+.login-box button:last-of-type {
+  background: rgba(255,255,255,0.7);
+  color: #374151;
+}
+
+/* effets */
+.login-box button:hover {
+  transform: translateY(-2px);
+}
+
+.login-box button:active {
+  transform: scale(0.98);
+}
+
+/* erreur */
+#error {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ef4444;
+}
+
+/* animation smooth */
+@media (max-width: 600px) {
+  .login-box {
+    border-radius: 30px;
+  }
+}
+
 
 /* =========================
    5. CARDS
@@ -615,12 +713,21 @@ Certains contenus nécessitent un accès au réseau hospitalier
 
 <!-- 🔐 PAGE DE CONNEXION -->
 
-<div id="loginPage" class="login hidden">
-  <h2>Accès réservé</h2>
-  <input type="password" id="password" placeholder="Mot de passe">
-  <button onclick="checkPassword()">Entrer</button>
-  <p id="error" style="color:red;"></p>
+<div id="loginModal" class="login-modal">
+  <div class="login-box">
+    <h2>🔐 Accès étudiant</h2>
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="checkPassword()">
+      Continuer
+    </button>
+    <button onclick="closeLogin()">
+      Annuler
+    </button>
+    <p id="error"></p>
+    
+  </div>
 </div>
+
 
 <!-- DISCLAIMER -->
 <div id="disclaimer" class="disclaimer-overlay">
