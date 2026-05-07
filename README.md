@@ -1073,14 +1073,42 @@ href="pdf/anatomiepulmonaire.pdf" target="_blank">
 </footer>
 
 <script>
-  function openLogin() {
-  document.getElementById("loginPage").classList.remove("hidden");
+  /* =========================
+LOGIN
+========================= */
 
-  // scroll vers le login (effet propre mobile)
-  document.getElementById("loginPage").scrollIntoView({
-    behavior: "smooth"
-  });
-  }
+function openLogin() {
+document.getElementById("loginModal").classList.add("show");
+}
+
+function closeLogin() {
+document.getElementById("loginModal").classList.remove("show");
+}
+
+function checkPassword() {
+
+const password = document.getElementById("password").value;
+
+if (password === "iadeicp543") {
+
+// ferme popup login
+closeLogin();
+
+// cache le hero
+document.querySelector(".hero").style.display = "none";
+
+// affiche disclaimer
+document.getElementById("disclaimer").classList.add("show");
+
+} else {
+
+document.getElementById("error").innerText =
+"Mot de passe incorrect";
+
+}
+}
+
+  
 function softClick() {
   // vibration mobile (si supporté)
   if (navigator.vibrate) {
@@ -1115,35 +1143,6 @@ function toggleMenu(id) {
   });
 }
   
-  function checkPassword() {
-  const password = document.getElementById("password").value;
-
-  if (password === "iadeicp543") {
-    
-    const login = document.getElementById("loginPage");
-    const disclaimer = document.getElementById("disclaimer");
-
-    // 🔥 fade out login
-    login.classList.add("hide");
-
-    // attendre la fin de l'animation
-    setTimeout(() => {
-      login.classList.add("hidden");
-
-      // 🔥 afficher disclaimer avec animation
-      disclaimer.classList.add("show");
-    }, 400);
-
-  } else {
-    document.getElementById("error").innerText = "Mot de passe incorrect";
-  }
-  }
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.querySelector(".icons").classList.add("show");
-  }, 800);
-});
-
 function toggleVideo() {
   const video = document.getElementById("videoContainer");
   const iframe = document.getElementById("videoFrame");
