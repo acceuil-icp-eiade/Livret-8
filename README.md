@@ -258,6 +258,8 @@ header p {
   border-radius: 12px;
   text-align: center;
   font-weight: bold;
+  max-width: 100%;
+box-sizing: border-box;
 }
     .btn:active,
 .card:active {
