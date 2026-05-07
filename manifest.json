@@ -1,0 +1,15 @@
+{
+  "name": "Accueil IADE ICP",
+  "short_name": "IADE ICP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
