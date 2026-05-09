@@ -816,18 +816,50 @@ body {
   transform: scale(0.96);
 }
 .header {
+
   position: sticky;
   top: 0;
 
+  z-index: 1000;
+
   backdrop-filter: blur(16px);
 
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.75);
 
   border-bottom:
     1px solid rgba(0,0,0,0.05);
 
-  padding: 18px;
-
-  z-index: 1000;
+  padding: 14px 20px;
 }
 
+.header-content {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.header h1 {
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.menu-btn {
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 24px;
+
+  cursor: pointer;
+}
+main {
+  padding-top: 20px;
+}
