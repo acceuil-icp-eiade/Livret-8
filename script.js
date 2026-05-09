@@ -128,4 +128,3 @@ function toggleItem(element) {
     }
   }, 800);
 });
-
