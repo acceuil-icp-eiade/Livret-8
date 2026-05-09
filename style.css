@@ -407,15 +407,26 @@ cursor: pointer;
 10. MENU BAS
 ========================= */
 .bottom-menu {
-position: fixed;
-bottom: 0;
-width: 100%;
-max-width: 500px;
-background: white;
-display: flex;
-justify-content: space-around;
-padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  max-width: 500px;
+
+  margin: auto;
+
+  background: white;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 10px;
+
+  z-index: 9999;
 }
+
 
 /* =========================
 11. ANIMATIONS
@@ -763,6 +774,9 @@ body {
       #eef4ff 0%,
       #f8fafc 100%
     );
+}
+body {
+  padding-bottom: 80px;
 }
 .card {
   box-shadow:
