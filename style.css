@@ -789,3 +789,6 @@ body {
 
   transition: 0.25s ease;
 }
+.card:active {
+  transform: scale(0.98);
+}
