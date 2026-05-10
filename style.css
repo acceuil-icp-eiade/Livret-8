@@ -528,7 +528,8 @@ background-color: #1a5fd0;
 width: 100%;
 padding: 14px;
 border-radius: 12px;
-background: linear-gradient(135deg, #48c9b0, #5dade2);
+background: linear-gradient(135deg, #60a5fa, #2563eb);
+
 color: white;
 font-weight: bold;
 transition: 0.2s;
