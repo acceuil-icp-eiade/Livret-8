@@ -631,8 +631,8 @@ transform: translateY(0);
 /* HERO */
 .hero {
 height: 100vh;
-background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkzybd8OvYp44A6yYzKX2PCza2xRHfzAhZVTTKAiQag&s=10');
 background-size: cover;
 background-position: center;
 display: flex;
@@ -647,16 +647,17 @@ font-family: Arial, sans-serif;
 max-width: 700px;
 padding: 20px;
 }
-
 .hero h1 {
-font-size: 2.5em;
-margin-bottom: 10px;
+font-size: 2.8em;
+font-weight: 600;
+letter-spacing: 0.5px;
 }
 
 .hero p {
-font-size: 1.2em;
-opacity: 0.9;
+font-size: 1.3em;
+opacity: 0.85;
 }
+
 
 /* BUTTONS */
 .buttons {
