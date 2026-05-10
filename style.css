@@ -957,3 +957,15 @@ section {
 section.show {
   animation: iosBounce 0.8s ease forwards;
 }
+
+/* Footer*/
+footer {
+  text-align: center;
+
+  padding: 30px 20px 100px;
+
+  color: #64748b;
+  font-size: 14px;
+
+  opacity: 0.85;
+}
