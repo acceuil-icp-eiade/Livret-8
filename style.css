@@ -865,3 +865,84 @@ main {
   font-size: 30px;
   color: #0f172a;
 }
+/* =========================
+MENU IOS PREMIUM
+========================= */
+
+.bottom-menu {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90%;
+  max-width: 420px;
+  height: 75px;
+
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(20px);
+
+  border-radius: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+
+  z-index: 9999;
+
+  overflow: hidden;
+}
+
+/* BLOB FLOTTANT */
+.menu-blob {
+  position: absolute;
+
+  width: 58px;
+  height: 58px;
+
+  background: linear-gradient(
+    135deg,
+    #3b82f6,
+    #2563eb
+  );
+
+  border-radius: 18px;
+
+  left: 18px;
+  top: 8px;
+
+  transition: all 0.35s cubic-bezier(.68,-0.55,.27,1.55);
+
+  box-shadow:
+    0 8px 20px rgba(37,99,235,0.35);
+
+  z-index: 1;
+}
+
+/* ICÔNES */
+.menu-item {
+  position: relative;
+  z-index: 2;
+
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  color: #64748b;
+  font-size: 22px;
+
+  transition: all 0.3s ease;
+}
+
+/* ACTIVE */
+.menu-item.active {
+  color: white;
+  transform: translateY(-4px) scale(1.08);
+}
