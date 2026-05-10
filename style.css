@@ -816,15 +816,20 @@ opacity: 0.7;
     transform 0.2s ease,
     box-shadow 0.25s ease;
 }
+
+/* BODY*/
+
 body {
   font-family: 'SF Pro Display', sans-serif;
   background: linear-gradient(to bottom, #eef4ff, #f8fbff);
   color: #111;
 }
-
+background-attachment: fixed;
 body {
   padding-bottom: 80px;
 }
+
+/ *CARD */
 .card {
   box-shadow:
     0 8px 30px rgba(15,23,42,0.08);
