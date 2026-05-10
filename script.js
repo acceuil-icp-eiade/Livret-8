@@ -128,3 +128,30 @@ function toggleItem(element) {
     }
   }, 800);
 });
+
+const items = document.querySelectorAll(".menu-item");
+const blob = document.querySelector(".menu-blob");
+
+function moveBlob(item) {
+  blob.style.left = item.offsetLeft + "px";
+}
+
+items.forEach(item => {
+
+  item.addEventListener("click", () => {
+
+    items.forEach(i =>
+      i.classList.remove("active")
+    );
+
+    item.classList.add("active");
+
+    moveBlob(item);
+
+  });
+
+});
+
+/* Position initiale */
+moveBlob(document.querySelector(".menu-item.active"));
+
