@@ -969,3 +969,8 @@ footer {
 
   opacity: 0.85;
 }
+/* bouton disclamer */
+
+.continue-btn {
+    margin-top: 25px;
+}
