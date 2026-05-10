@@ -294,8 +294,10 @@ pointer-events: all;
 /* =========================
 POPUP CONTENT (clean)
 ========================= */
+
 .popup-content {
-background: white;
+  background: linear-gradient(135deg, #60a5fa, #1d4ed8);
+
 padding: 20px;
 border-radius: 16px;
 
