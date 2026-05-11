@@ -296,9 +296,7 @@ POPUP CONTENT (clean)
 ========================= */
 
 .popup-content {
-  background-color: #eaf2ff
- background: linear-gradient(to bottom, #eef4ff, #f7f9fb);
-  
+background-color: #eaf2ff
 padding: 20px;
 border-radius: 16px;
 
