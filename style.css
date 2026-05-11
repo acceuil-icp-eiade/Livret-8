@@ -295,7 +295,7 @@ pointer-events: all;
 POPUP CONTENT (clean)
 ========================= */
 .popup-content {
-  background-color: #eaf2ff;
+  background: #eaf2ff;
 padding: 20px;
 border-radius: 16px;
 
