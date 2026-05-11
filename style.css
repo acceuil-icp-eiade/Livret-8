@@ -11,11 +11,11 @@ padding: 0;
 /* =========================
 2. BASE
 ========================= */
+
 body {
-  font-family: 'SF Pro Display', sans-serif;
-  background: linear-gradient(to bottom, #eef4ff, #f8fbff);
-  color: #111;
-}
+font-family: 'Segoe UI', Arial, sans-serif;
+background-color: #f7f9fb;
+color: #2c3e50;
 
 margin: 0;
 padding: 0;
@@ -294,9 +294,8 @@ pointer-events: all;
 /* =========================
 POPUP CONTENT (clean)
 ========================= */
-
 .popup-content {
-background-color: #eaf2ff
+  background-color: #eaf2ff;
 padding: 20px;
 border-radius: 16px;
 
@@ -630,83 +629,35 @@ opacity: 1;
 transform: translateY(0);
 }
 }
-
-/* HERO PREMIUM iOS STYLE */
+/* HERO */
 .hero {
 height: 100vh;
-background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkzybd8OvYp44A6yYzKX2PCza2xRHfzAhZVTTKAiQag&s=10');
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkzybd8OvYp44A6yYzKX2PCza2xRHfzAhZVTTKAiQag&s=10');
 background-size: cover;
 background-position: center;
 display: flex;
 align-items: center;
 justify-content: center;
-position: relative;
-overflow: hidden;
-color: #fff;
-font-family: 'Inter', Arial, sans-serif;
-}
-
-/* overlay sombre + léger blur global */
-.hero::before {
-content: "";
-position: absolute;
-inset: 0;
-background: rgba(0,0,0,0.45);
-backdrop-filter: blur(2px);
-}
-
-/* GLASS CARD */
-.overlay {
-position: relative;
-z-index: 2;
-max-width: 750px;
-padding: 30px 35px;
 text-align: center;
-
-/* effet verre */
-background: rgba(255, 255, 255, 0.08);
-border: 1px solid rgba(255, 255, 255, 0.15);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-
-border-radius: 20px;
-box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-
-/* animation */
-animation: fadeUp 1s ease-out forwards;
-opacity: 0;
-transform: translateY(20px);
+color: #fff;
+font-family: Arial, sans-serif;
 }
 
-/* TITRE */
+.overlay {
+max-width: 700px;
+padding: 20px;
+}
 .hero h1 {
 font-size: 2.8em;
 font-weight: 600;
-margin-bottom: 10px;
-animation: fadeUp 1.2s ease-out forwards;
-opacity: 0;
+letter-spacing: 0.5px;
 }
 
-/* TEXTE */
 .hero p {
-font-size: 1.2em;
+font-size: 1.3em;
 opacity: 0.85;
-animation: fadeUp 1.4s ease-out forwards;
-opacity: 0;
 }
-
-/* ANIMATION */
-@keyframes fadeUp {
-from {
-opacity: 0;
-transform: translateY(20px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-
 
 
 /* BUTTONS */
@@ -819,19 +770,18 @@ opacity: 0.7;
     box-shadow 0.25s ease;
 }
 
-/* BODY*/
+/* BODY */
 
 body {
   font-family: 'SF Pro Display', sans-serif;
-  background: linear-gradient(to bottom, #eef4ff, #f8fbff);
+  background: linear-gradient(to bottom, #dfe9ff, #f8fbff);
   color: #111;
 }
 background-attachment: fixed;
+
 body {
   padding-bottom: 80px;
 }
-
-/ *CARD */
 .card {
   box-shadow:
     0 8px 30px rgba(15,23,42,0.08);
