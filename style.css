@@ -499,7 +499,8 @@ display: block;
 
 /* version spéciale */
 .fiche-plan {
-background: #ffffff;
+  background: linear-gradient(to bottom, #eef4ff, #f7f9fb);
+
 }
 
 /* =========================
