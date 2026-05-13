@@ -182,7 +182,7 @@ threshold: 0.15
 sections.forEach(section => {
 observer.observe(section);
 });
-const SUPABASE_URL = "https://dmitkczvdkakkbddhkxj.supabase.co;
+const SUPABASE_URL = "https://dmitkczvdkakkbddhkxj.supabase.co";
 const SUPABASE_KEY = "sb_publishable_paHkYGm6z6ZX4p9GBKIR5A_vkXGqEhN";
 
 const client = supabase.createClient(
