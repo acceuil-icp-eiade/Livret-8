@@ -278,6 +278,31 @@ document
 
 });
 
+function openDirectory(){
+
+  const section =
+    document.getElementById("annuaireSection");
+
+  if(section){
+
+    section.scrollIntoView({
+      behavior: "smooth"
+    });
+
+    setTimeout(() => {
+
+      const input =
+        document.getElementById("searchInput");
+
+      if(input){
+        input.focus();
+      }
+
+    }, 500);
+
+  }
+
+}
 
 
 loadContacts();
