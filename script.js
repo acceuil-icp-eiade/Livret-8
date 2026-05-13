@@ -54,16 +54,22 @@ softClick();
 });
 });
 function openPopup(id) {
-const popup = document.getElementById(id);
-popup.style.display = "flex";
-setTimeout(() => popup.classList.add("show"), 10);
+  const popup = document.getElementById(id);
+  popup.style.display = "flex";
+  setTimeout(() => popup.classList.add("show"), 10);
+
+  document.querySelector(".bottom-menu")?.classList.add("hidden");
 }
 
 function closePopup(id) {
-const popup = document.getElementById(id);
-popup.classList.remove("show");
-setTimeout(() => popup.style.display = "none", 300);
+  const popup = document.getElementById(id);
+  popup.classList.remove("show");
+
+  setTimeout(() => popup.style.display = "none", 300);
+
+  document.querySelector(".bottom-menu")?.classList.remove("hidden");
 }
+
 function toggleMenu(id) {
 const menus = document.querySelectorAll(".submenu");
 
