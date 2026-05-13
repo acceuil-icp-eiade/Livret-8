@@ -1071,7 +1071,7 @@ function openDirectory(){
     }
 /* espace plus aéré */
     
-    .stage-list {
+.stage-list {
     padding-left: 20px;
 }
 
@@ -1079,7 +1079,7 @@ function openDirectory(){
     margin-bottom: 16px;
     line-height: 1.7;
 }
-    .infos-stage {
+.infos-stage {
     margin-top: 20px;
 }
 
@@ -1104,7 +1104,7 @@ function openDirectory(){
 
 .info-card h3 {
     margin-bottom: 14px;
-    color: #0f172a;
+    color: #1e293b;
     font-size: 1.1rem;
 }
 
