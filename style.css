@@ -1069,3 +1069,13 @@ function openDirectory(){
   }, 500);
 
     }
+/* espace plus aéré */
+    
+    .stage-list {
+    padding-left: 20px;
+}
+
+.stage-list li {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
