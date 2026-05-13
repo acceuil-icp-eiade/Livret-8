@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
 setTimeout(() => {
 document.getElementById("splash")
 .classList.add("hide");
-}, 4000);
+}, 3000);
 
 });
 /* =========================
