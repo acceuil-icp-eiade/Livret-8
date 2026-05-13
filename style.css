@@ -979,18 +979,82 @@ footer {
 .continue-btn {
     margin-top: 25px;
 }
-.contact-card{
-  background:white;
-  padding:20px;
-  margin-bottom:15px;
-  border-radius:20px;
-  box-shadow:0 4px 20px rgba(0,0,0,0.08);
+
+/*contact*/
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
 }
 
-#searchInput{
-  width:100%;
-  padding:15px;
-  margin-bottom:20px;
-  border:none;
-  border-radius:15px;
+.container {
+  width: 400px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1e293b;
+  border-radius: 10px;
+}
+const SUPABASE_URL = "https://dmitkczvdkakkbddhkxj.supabase.co";
+const SUPABASE_KEY = "sb_publishable_paHkYGm6z6ZX4p9GBKIR5A_vkXGqEhN";
+
+async function searchContact() {
+  const name = document.getElementById("search").value;
+
+  if (!name) return;
+
+  const res = await fetch(
+    `${SUPABASE_URL}/rest/v1/contacts?name=ilike.*${name}*`,
+    {
+      headers: {
+        apikey: SUPABASE_KEY,
+        Authorization: `Bearer ${SUPABASE_KEY}`
+      }
+    }
+  );
+
+  const data = await res.json();
+  showResult(data);
+}
+
+function showResult(data) {
+  const result = document.getElementById("result");
+
+  if (data.length === 0) {
+    result.innerHTML = "❌ Aucun contact trouvé";
+    return;
+  }
+
+  const c = data[0]; // premier résultat
+
+  result.innerHTML = `
+    <p><strong>Nom :</strong> ${c.name}</p>
+    <p><strong>Téléphone :</strong> ${c.phone}</p>
+  `;
 }
