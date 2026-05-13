@@ -178,12 +178,18 @@ const observer = new IntersectionObserver(
   }
 
 );
+const SUPABASE_KEY = "sb_publishable_paHkYGm6z6ZX4p9GBKIR5A_vkXGqEhN";
 
+fetch("https://dmitkczvdkakkbddhkxj.supabase.co/rest/v1/contacts", {
+  method: "GET",
+  headers: {
+    apikey: SUPABASE_KEY,
+    Authorization: `Bearer ${SUPABASE_KEY}`
+  }
+});
 sections.forEach(section => {
   observer.observe(section);
 });
-const SUPABASE_URL = "TON_URL";
-const SUPABASE_KEY = "TA_CLE";
 
 const client = supabase.createClient(
   SUPABASE_URL,
