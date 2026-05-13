@@ -397,31 +397,74 @@ max-width: 500px;
   justify-content: center;
 }
 
-.continue-btn {
-  background: linear-gradient(135deg, #1e3a8a, #2563eb);
-  color: white;
+/* bouton glass iOS */
+.glass-btn {
+  position: relative;
 
-  border: none;
-  border-radius: 16px;
+  width: 85%;
+  max-width: 320px;
 
   padding: 14px 22px;
 
   font-size: 16px;
   font-weight: 600;
+  color: white;
 
-  width: 85%;
-  max-width: 320px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+  background: rgba(30, 58, 138, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
 
   cursor: pointer;
 
   transition: all 0.25s ease;
+  overflow: hidden;
 }
 
-.continue-btn:active {
-  transform: scale(0.97);
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+/* reflet lumineux */
+.glass-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -30%;
+  width: 160%;
+  height: 160%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transform: rotate(25deg);
+}
+
+/* hover */
+.glass-btn:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* clic vibration */
+.glass-btn:active {
+  animation: shake 0.18s ease-in-out;
+  transform: scale(0.96);
+}
+
+/* shake effet tactile */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
 }
 /* =========================
 9. UTILITIES
