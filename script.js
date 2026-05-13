@@ -215,7 +215,16 @@ function displayContacts(data){
     document.getElementById("contactsList");
 
   container.innerHTML = "";
+if(data.length === 0){
 
+  container.innerHTML = `
+    <div class="empty-search">
+      🔍 Recherchez un contact
+    </div>
+  `;
+
+  return;
+}
   data.forEach(contact => {
 
     container.innerHTML += `
