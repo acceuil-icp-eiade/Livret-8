@@ -182,3 +182,85 @@ threshold: 0.15
 sections.forEach(section => {
 observer.observe(section);
 });
+const SUPABASE_URL = "https://dmitkczvdkakkbddhkxj.supabase.co;
+const SUPABASE_KEY = "sb_publishable_paHkYGm6z6ZX4p9GBKIR5A_vkXGqEhN";
+
+const client = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
+let contacts = [];
+
+async function loadContacts() {
+
+  const { data, error } = await client
+    .from("contacts")
+    .select("*")
+    .order("nom");
+
+  if(error){
+    console.error(error);
+    return;
+  }
+
+  contacts = data;
+
+  displayContacts(data);
+}
+
+function displayContacts(data){
+
+  const container =
+    document.getElementById("contactsList");
+
+  container.innerHTML = "";
+
+  data.forEach(contact => {
+
+    container.innerHTML += `
+      <div class="contact-card">
+
+        <h3>${contact.nom}</h3>
+
+        <div class="service">
+          ${contact.service}
+        </div>
+
+        <a
+          class="call-btn"
+          href="tel:${contact.numero}"
+        >
+          📞 ${contact.numero}
+        </a>
+
+      </div>
+    `;
+  });
+}
+
+document
+  .getElementById("searchInput")
+  .addEventListener("input", (e)=>{
+
+    const search =
+      e.target.value.toLowerCase();
+
+    const filtered =
+      contacts.filter(contact =>
+
+        contact.nom
+          .toLowerCase()
+          .includes(search)
+
+        ||
+
+        contact.service
+          .toLowerCase()
+          .includes(search)
+      );
+
+    displayContacts(filtered);
+});
+
+loadContacts();
