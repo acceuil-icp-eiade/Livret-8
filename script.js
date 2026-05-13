@@ -206,7 +206,7 @@ async function loadContacts() {
 
   contacts = data;
 
-  displayContacts(data);
+  displayContacts([]);
 }
 
 function displayContacts(data){
@@ -238,29 +238,37 @@ function displayContacts(data){
     `;
   });
 }
-
 document
-  .getElementById("searchInput")
-  .addEventListener("input", (e)=>{
+.getElementById("searchInput")
+.addEventListener("input", (e)=>{
 
-    const search =
-      e.target.value.toLowerCase();
+  const search =
+    e.target.value.trim().toLowerCase();
 
-    const filtered =
-      contacts.filter(contact =>
+  // si rien écrit → aucun contact
+  if(search === ""){
+    displayContacts([]);
+    return;
+  }
 
-        contact.nom
-          .toLowerCase()
-          .includes(search)
+  const filtered =
+    contacts.filter(contact =>
 
-        ||
+      contact.nom
+      .toLowerCase()
+      .includes(search)
 
-        contact.service
-          .toLowerCase()
-          .includes(search)
-      );
+      ||
 
-    displayContacts(filtered);
+      contact.service
+      .toLowerCase()
+      .includes(search)
+    );
+
+  displayContacts(filtered);
+
 });
+
+
 
 loadContacts();
