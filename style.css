@@ -1116,12 +1116,11 @@ function openDirectory(){
 .info-card li {
     margin-bottom: 14px;
     line-height: 1.7;
-    color: rgba(255,255,255,0.92);
-}
-    .infos-stage {
+    color: #334155;
+} 
+.infos-stage {
     margin-top: 8px;
-    }
-    .popup-content {
+    } .popup-content {
     max-height: 90vh;
     overflow-y: auto;
     padding-top: 50px;
