@@ -426,7 +426,15 @@ cursor: pointer;
 
   z-index: 9999;
 }
+.bottom-menu {
+  transition: all 0.3s ease;
+}
 
+.bottom-menu.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+}
 
 /* =========================
 11. ANIMATIONS
