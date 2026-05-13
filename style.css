@@ -978,6 +978,9 @@ footer {
 .continue-btn {
     margin-top: 25px;
 }
+
+/* annuaire*/
+
 body{
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background:#f4f7fb;
@@ -1045,3 +1048,24 @@ body{
   color:#94a3b8;
   font-size:18px;
 }
+
+/* raccourci annuaire */
+function openDirectory(){
+
+  const section =
+    document.getElementById("annuaireSection");
+
+  section.scrollIntoView({
+    behavior: "smooth"
+  });
+
+  // focus automatique
+  setTimeout(() => {
+
+    document
+      .getElementById("searchInput")
+      .focus();
+
+  }, 500);
+
+    }
