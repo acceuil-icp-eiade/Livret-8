@@ -1131,26 +1131,7 @@ body{
   font-size:18px;
 }
 
-/* raccourci annuaire */
-function openDirectory(){
 
-  const section =
-    document.getElementById("annuaireSection");
-
-  section.scrollIntoView({
-    behavior: "smooth"
-  });
-
-  // focus automatique
-  setTimeout(() => {
-
-    document
-      .getElementById("searchInput")
-      .focus();
-
-  }, 500);
-
-    }
 /* espace plus aéré */
     
 .stage-list {
