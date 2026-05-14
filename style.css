@@ -1235,9 +1235,15 @@ function openDirectory(){
     .welcome-card p {
   margin-bottom: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.92);
+  color: #334155;
+    }
+    
+    .welcome-card {
+  color: #1e293b; /* texte foncé lisible */
+    }
+.welcome-card h2 {
+  color: #0f172a;
 }
-
 .welcome-card h2 {
   margin-bottom: 18px;
   line-height: 1.3;
