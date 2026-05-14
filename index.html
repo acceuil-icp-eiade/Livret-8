@@ -162,7 +162,7 @@ En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet aver
 <div class="cards-row">
 
 <div class="card clickable" onclick="openPopup('popupJour')">
-<h2>📍 Votre premier jour ➡️ </h2>
+<h2>📍 VOTRE PREMIER JOUR </h2>
 </div>
 
 <!-- Popup Votre premier jour -->
@@ -200,7 +200,7 @@ En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet aver
 
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupVie')">
-<h2>🏥 Vie pratique ➡️ </h2>
+<h2>🏥 VIE PRATIQUE  </h2>
 </div>
 
 <!-- Popup -->
@@ -250,8 +250,9 @@ En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet aver
 </div>
 <div>
 <div class="card" id="plan">
-
-<h3>🗺️ Plan du bloc opératoire</h3>
+  <div class="card welcome-card">
+<h3>🗺️ PLAN DU BLOC OPÉRATOIRE</h3>
+    <p></p>
 <p>Consultez le plan pour vous repérer facilement dans le service.</p>
 <a href="pdf/plan2.pdf" download>
 ✅️ Télécharger le plan
@@ -262,9 +263,10 @@ En cliquant sur Continuer, vous reconnaissez avoir pris connaissance de cet aver
 <p class="hint">👉 Appuyez sur retour pour revenir au site</p>
 </div>
 </div>
+</div>
 <div>
 <div class="card" id="visite">
-<h2>🎥 Visite du service</h2>
+<h2>🎥 VISITE DU SERVICE</h2>
 <i>disponible prochainement</i>
 
 <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
@@ -284,7 +286,7 @@ allowfullscreen>
 <div>
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popuporganigramme')">
-<h2>🩺 Organigramme du service</h2>
+<h2>🩺 ORGANIGRAMME </h2>
 </div>
 
 <!-- Popup -->
@@ -293,7 +295,7 @@ allowfullscreen>
 <div class="popup-content">
 <button class="close-btn" onclick="closePopup('popuporganigramme')">✖️</button>
 
-<h2>🩺 Organigramme </h2>
+<h2>🩺 ORGANIGRAMME </h2>
 <ul class="stage-list">
 
   <li class="section-line">
@@ -331,14 +333,14 @@ allowfullscreen>
 <div>
 <!-- Carte -->
 <div class="card clickable" onclick="openPopup('popupReferents')">
-<h2>♻️ Référents</h2>
+<h2>♻️ RÉFÉRENTS</h2>
 </div>
 
 <!-- Popup -->
 <div id="popupReferents" class="popup">
 <div class="popup-content">
 <button class="close-btn" onclick="closePopup('popupReferents')">✖️</button>
-<h2>♻️ Référents</h2>
+<h2>♻️ RÉFÉRENTS </h2>
 
 <ul class="stage-list">
 
@@ -393,7 +395,7 @@ allowfullscreen>
 </div>
 
 <div class="card" id="documents">
-<h2>📄 Accès rapide aux documents</h2><i>(source principale RFE SFAR)</i>
+<h2>📄 ACCÈS RAPIDE AUX DOCUMENTS</h2><i>(source principale RFE SFAR)</i>
 <p class="hint">👉 Appuyez sur retour pour revenir au site</p>
 
 <div class="btn" onclick="toggleMenu('chirMenu')">
@@ -510,17 +512,17 @@ target="_blank">
 </div>
 </div>
 </div>
+  <div class="card welcome-card">
 
-<div class="card">
-<h2>💬 Petit mot pour vous</h2>
+<h2>💬 Petit mot pour vous </h2>
 <p>
 Le bloc est un environnement exigeant, mais aussi passionnant.
  Prenez le temps d’observer, de comprendre… et surtout de vous faire confiance.
 </p>
 <p><strong>On est là pour vous accompagner 🤝</strong></p>
 </div>
-
-<div class="card" id="retour">
+   <div class="card" id="retour"> 
+  <div class="card welcome-card">
 <h2>📝 Retour de stage</h2>
 
 <p>
@@ -536,4 +538,4 @@ Institut Cœur Poumon – Bloc opératoire
 </footer>
 <script src="script.js"></script>
 
-</body>
+   </body>
