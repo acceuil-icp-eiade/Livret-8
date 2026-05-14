@@ -711,16 +711,18 @@ opacity: 1;
 transform: translateY(0);
 }
 }
-
-/*----- HERO -------- */
+/* HERO */
 .hero {
 height: 100vh;
-background-image: url("images.jpeg");
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkzybd8OvYp44A6yYzKX2PCza2xRHfzAhZVTTKAiQag&s=10');
+background-size: cover;
+background-position: center;
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-color: white;
+color: #fff;
 font-family: Arial, sans-serif;
 }
 
@@ -851,22 +853,17 @@ opacity: 0.7;
 }
 
 /* BODY */
+
 body {
-  margin: 0;
   font-family: 'SF Pro Display', sans-serif;
-  background-image: url("images.jpeg");
-  
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
+  background: linear-gradient(to bottom, #dfe9ff, #f8fbff);
   color: #111;
+}
+background-attachment: fixed;
 
+body {
   padding-bottom: 80px;
 }
-
 .card {
   box-shadow:
     0 8px 30px rgba(15,23,42,0.08);
@@ -875,7 +872,6 @@ body {
 .btn:active {
   transform: scale(0.98);
 }
-
 .card {
   background: rgba(255,255,255,0.75);
   backdrop-filter: blur(14px);
