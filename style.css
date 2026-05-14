@@ -853,17 +853,24 @@ opacity: 0.7;
 }
 
 /* BODY */
-
 body {
+  margin: 0;
   font-family: 'SF Pro Display', sans-serif;
-  background: linear-gradient(to bottom, #dfe9ff, #f8fbff);
-  color: #111;
-}
-background-attachment: fixed;
 
-body {
+  background:
+    linear-gradient(rgba(15,23,42,0.45), rgba(15,23,42,0.55)),
+    url("ton-image.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #111;
+
   padding-bottom: 80px;
 }
+
 .card {
   box-shadow:
     0 8px 30px rgba(15,23,42,0.08);
