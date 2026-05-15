@@ -251,9 +251,7 @@ font-weight: bold;
 max-width: 100%;
 box-sizing: border-box;
 }
-body {
-  color: #1e1e1e;
-}
+
 .btn {
   text-decoration: none;
   font-weight: bold;
@@ -266,6 +264,7 @@ transition: 0.1s;
 * {
 box-sizing: border-box;
 }
+
 /* =========================
 POPUP BASE
 ========================= */
@@ -368,6 +367,7 @@ transform: translateY(0) scale(1);
 /* =========================
 8. DISCLAIMER
 ========================= */
+
 .disclaimer-overlay {
 position: fixed;
 inset: 0;
@@ -401,6 +401,7 @@ max-width: 500px;
 }
 
 /* bouton glass iOS */
+
 .glass-btn {
   position: relative;
 
@@ -431,6 +432,7 @@ max-width: 500px;
 }
 
 /* reflet lumineux */
+
 .glass-btn::before {
   content: "";
   position: absolute;
@@ -448,6 +450,7 @@ max-width: 500px;
 }
 
 /* hover */
+
 .glass-btn:hover {
   transform: translateY(-1px);
   box-shadow:
@@ -456,12 +459,14 @@ max-width: 500px;
 }
 
 /* clic vibration */
+
 .glass-btn:active {
   animation: shake 0.18s ease-in-out;
   transform: scale(0.96);
 }
 
 /* shake effet tactile */
+
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-2px); }
@@ -469,9 +474,11 @@ max-width: 500px;
   75% { transform: translateX(-1px); }
   100% { transform: translateX(0); }
 }
+
 /* =========================
 9. UTILITIES
 ========================= */
+
 .hidden {
 display: none !important;
 }
@@ -483,6 +490,7 @@ cursor: pointer;
 /* =========================
 10. MENU BAS
 ========================= */
+
 .bottom-menu {
   position: fixed;
   bottom: 0;
@@ -516,6 +524,7 @@ cursor: pointer;
 /* =========================
 11. ANIMATIONS
 ========================= */
+
 @keyframes fadeInHeader {
 from { opacity: 0; transform: translateY(-15px); }
 }
@@ -559,9 +568,11 @@ left: 50%;
 transform: translateX(-50%);
 max-width: 500px;
 }
+
 /* =========================
 FICHES
 ========================= */
+
 .fiche {
 background: #ffffff;
 padding: 16px;
@@ -663,9 +674,11 @@ font-size: 12px;
 color: gray;
 margin-top: 5px;
 }
+
 /* =========================
 ANIMATION URGENCE
 ========================= */
+
 @keyframes pulseUrgence {
 0% { transform: scale(1); }
 50% { transform: scale(1.05); }
@@ -714,34 +727,52 @@ opacity: 1;
 transform: translateY(0);
 }
 }
+
 /* HERO */
+
 .hero {
-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
-url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkzybd8OvYp44A6yYzKX2PCza2xRHfzAhZVTTKAiQag&s=10');
-background-size: cover;
-background-position: center;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-color: #fff;
-font-family: Arial, sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQkzybd8OvYp44A6yYzKX2PCza2xRHfzAhZVTTKAiQag&s=10');
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 .overlay {
-max-width: 700px;
-padding: 20px;
+  max-width: 700px;
+  padding: 20px;
 }
+
 .hero h1 {
-font-size: 2.8em;
-font-weight: 600;
-letter-spacing: 0.5px;
+  font-size: 2.8em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .hero p {
-font-size: 1.3em;
-opacity: 0.85;
+  font-size: 1.3em;
+  opacity: 0.85;
 }
 
 
@@ -785,6 +816,7 @@ margin-top: 20px;
 font-size: 0.9em;
 opacity: 0.7;
 }
+
 /* =========================
    SPLASH SCREEN
 ========================= */
@@ -855,7 +887,7 @@ opacity: 0.7;
     box-shadow 0.25s ease;
 }
 
-/* BODY */
+/* CARDS */
 
 
 .card {
