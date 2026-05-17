@@ -72,7 +72,7 @@ animation: float 2s infinite ease-in-out;
 }
 
 /* =========================
-LOGIN POPUP IOS PREMIUM
+4. LOGIN POPUP IOS PREMIUM
 ========================= */
 
 .login-modal {
@@ -98,7 +98,9 @@ opacity: 1;
 visibility: visible;
 }
 
-/* BOX */
+/* =================
+5. BOX 
+============== */
 .login-box {
 width: 90%;
 max-width: 340px;
@@ -122,7 +124,9 @@ transform: translateY(40px) scale(0.92);
 transition: 0.35s ease;
 }
 
-/* animation popup */
+/* ==================
+6. animation popup
+======================*/
 .login-modal.show .login-box {
 transform: translateY(0) scale(1);
 }
@@ -155,7 +159,9 @@ box-shadow:
 inset 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* BOUTON PRINCIPAL */
+/* ====================
+7. BOUTON PRINCIPAL
+======================= */
 .login-box button {
 width: 100%;
 padding: 15px;
@@ -212,7 +218,7 @@ border-radius: 30px;
 }
 
 /* =========================
-5. CARDS
+8. CARDS
 ========================= */
 .card {
 background: white;
@@ -237,7 +243,7 @@ min-width: 0; /* 🔥 évite le débordement */
 }
 
 /* =========================
-6. BUTTONS
+9. BUTTONS
 ========================= */
 .btn {
 display: block;
@@ -267,7 +273,7 @@ box-sizing: border-box;
 }
 
 /* =========================
-POPUP BASE
+10. POPUP BASE
 ========================= */
 .popup {
 position: fixed;
@@ -295,7 +301,7 @@ pointer-events: all;
 }
 
 /* =========================
-POPUP CONTENT (clean)
+11. POPUP CONTENT (clean)
 ========================= */
 .popup-content {
   background-color: #eaf2ff;
@@ -317,7 +323,7 @@ animation: iosBounce 0.45s ease-out forwards;
 }
 
 /* =========================
-CLOSE BUTTON
+12. CLOSE BUTTON
 ========================= */
 .close-btn {
 position: absolute;
@@ -345,7 +351,7 @@ transition: 0.2s;
 }
 
 /* =========================
-ANIMATION IOS
+13. ANIMATION IOS
 ========================= */
 @keyframes iosBounce {
 0% {
@@ -366,7 +372,7 @@ transform: translateY(0) scale(1);
 
 
 /* =========================
-8. DISCLAIMER
+14. DISCLAIMER
 ========================= */
 
 .disclaimer-overlay {
@@ -477,7 +483,7 @@ max-width: 500px;
 }
 
 /* =========================
-9. UTILITIES
+15. UTILITIES
 ========================= */
 
 .hidden {
@@ -489,7 +495,7 @@ cursor: pointer;
 }
 
 /* =========================
-10. MENU BAS
+16. MENU BAS
 ========================= */
 
 .bottom-menu {
@@ -523,7 +529,7 @@ cursor: pointer;
 }
 
 /* =========================
-11. ANIMATIONS
+17. ANIMATIONS
 ========================= */
 
 @keyframes fadeInHeader {
@@ -571,7 +577,7 @@ max-width: 500px;
 }
 
 /* =========================
-FICHES
+18. FICHES
 ========================= */
 
 .fiche {
@@ -600,7 +606,7 @@ background: #ffffff;
 }
 
 /* =========================
-BOUTONS VARIANTS
+19. BOUTONS VARIANTS
 ========================= */
 
 /* bouton PDF */
@@ -660,7 +666,7 @@ transform: scale(1.05);
 background: linear-gradient(135deg, #ff4fa3, #ff7ac3);
 }
 /* =========================
-couleur
+20. couleur
 ========================= */
 .rouge {
 color: red;
@@ -677,7 +683,7 @@ margin-top: 5px;
 }
 
 /* =========================
-ANIMATION URGENCE
+21. ANIMATION URGENCE
 ========================= */
 
 @keyframes pulseUrgence {
@@ -730,7 +736,7 @@ transform: translateY(0);
 }
 
 /* ================
-      HERO
+ 22.     HERO
 ==================== */
 .hero {
   height: 100vh;
@@ -841,7 +847,7 @@ opacity: 0.7;
 }
 
 /* =========================
-   SPLASH SCREEN
+ 23.  SPLASH SCREEN
 ========================= */
 
 #splash {
@@ -910,7 +916,9 @@ opacity: 0.7;
     box-shadow 0.25s ease;
 }
 
-/* CARDS */
+/* ==============
+24. CARDS
+================== */
 
 
 .card {
@@ -1001,7 +1009,7 @@ main {
   color: #0f172a;
 }
 /* =========================
-MENU IOS PREMIUM
+25. MENU IOS PREMIUM
 ========================= */
 
 .bottom-menu {
