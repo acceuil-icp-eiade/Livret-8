@@ -22,9 +22,7 @@ function afficherVideos(liste) {
 
         <h3>${video.titre}</h3>
 
-        <button onclick="lireVideo('${video.fichier}')">
-        ▶️ Regarder
-        </button>
+    
 
         `;
 
