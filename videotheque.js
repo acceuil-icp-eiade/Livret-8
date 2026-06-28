@@ -62,25 +62,25 @@ function rechercherVideos() {
 
 }
 
-
-
 function lireVideo(fichier) {
 
+    const zone = document.getElementById("zoneLecteur");
     const lecteur = document.getElementById("lecteurVideo");
-
     const source = document.getElementById("sourceVideo");
 
     source.src = fichier;
 
     lecteur.load();
 
-    lecteur.style.display = "block";
+    zone.style.display = "block";
 
-    lecteur.scrollIntoView({
-        behavior:"smooth"
+    zone.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
     });
 
 }
+
 window.onload = function(){
     afficherVideos(videos);
 };
