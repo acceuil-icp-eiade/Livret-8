@@ -1311,3 +1311,9 @@ body{
     h2 {
   text-shadow: 0 1px 1px rgba(0,0,0,0.04);
     }
+
+/* zone de lecture vidéo*/
+#zoneLecteur {
+    display: none;
+    margin-top: 20px;
+}
