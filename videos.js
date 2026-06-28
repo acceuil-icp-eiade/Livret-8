@@ -31,6 +31,25 @@ const videos = [
         "cardiologie",
         "thermique"
     ]
-}
+},
+    
+    {
+    titre: "Kryoablation de FA",
+    fichier: "videos/cardiologie/kryoablation.mp4",
+    miniature: "miniatures/cardiologie/kryo.png",
+    motsCles: [
+        "fa",
+        "fibrillation",
+        "atriale",
+        "ablation",
+        "catheter",
+        "electrophysiologie",
+        "arythmie",
+        "cardiologie",
+        "thermique",
+        "froid"
+    
+    ]
+    }
 ];
 
