@@ -1323,3 +1323,33 @@ body{
     object-fit:cover;
     border-radius:10px;
 }
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.video-card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.video-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    margin: 10px 0;
+}
+
+.video-card button {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
