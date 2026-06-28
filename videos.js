@@ -34,6 +34,23 @@ const videos = [
 },
     
     {
+    titre: "Ablation de FA par électroporation",
+    fichier: "videos/cardiologie/electroporation.mp4",
+    miniature: "miniatures/cardiologie/electroporation.jpg",
+    motsCles: [
+        "fa",
+        "fibrillation",
+        "atriale",
+        "ablation",
+        "catheter",
+        "electrophysiologie",
+        "arythmie",
+        "cardiologie"
+        
+    ]
+},
+    
+    {
     titre: "Kryoablation de FA",
     fichier: "videos/cardiologie/kryoablation.mp4",
     miniature: "miniatures/cardiologie/kryo.png",
