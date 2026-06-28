@@ -66,7 +66,7 @@ const videos = [
 },
     
     {
-    titre: "Kryoablation de FA",
+    titre: "Cryoablation de FA",
     fichier: "videos/cardiologie/cryoablation.mp4",
     miniature: "miniatures/cardiologie/kryo.png",
     motsCles: [
