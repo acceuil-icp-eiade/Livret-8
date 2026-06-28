@@ -533,13 +533,20 @@ onkeyup="rechercherVideos()">
 
 
 <div id="listeVideos" class="video-grid"></div>
-
+<div id="zoneLecteur">
 
 <video 
 id="lecteurVideo" 
 controls 
-width="100%" 
-style="display:none; margin-top:20px;">
+width="100%">
+ 
+<source id="sourceVideo" src="" type="video/mp4">
+
+Votre navigateur ne supporte pas la vidéo.
+
+</video>
+
+</div>
 
 <source id="sourceVideo" src="" type="video/mp4">
 
