@@ -15,6 +15,21 @@ const videos = [
         "valvulopathie"
     ]
 },
+    {
+    titre: "MITRACLIP",
+    fichier: "videos/cardiologie/clip_mitral.mp4",
+    miniature: "miniatures/cardiologie/mitraclip.png",
+    motsCles: [
+        "tmvr",
+        "valve",
+        "mitrale",
+        "cardiologie",
+        "interventionnelle",
+        "insuffisance",
+        "transseptale",
+        "valvulopathie"
+    ]
+},
 
 {
     titre: "Ablation de FA par radiofréquence",
