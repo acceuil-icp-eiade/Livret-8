@@ -28,7 +28,7 @@ const videos = [
         "catheter",
         "electrophysiologie",
         "arythmie",
-        "cardiologie"
+        "cardiologie",
         "thermique"
     ]
 },
