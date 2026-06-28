@@ -31,25 +31,6 @@ const videos = [
         "cardiologie",
         "thermique"
     ]
-},
-{
-    titre: "Ablation de FA par radio fréquence",
-    fichier: "videos/cardiologie/FA_ablation_catheter.mp4",
-    miniature: "miniatures/cardiologie/fa.jpg",
-    motsCles: [
-        "fa",
-        "fibrillation",
-        "atriale",
-        "ablation",
-        "catheter",
-        "electrophysiologie",
-        "arythmie",
-        "cardiologie",
-        "thermique",
-        "radio",
-        "frequence"
-    
-    ]
 }
 ];
 
