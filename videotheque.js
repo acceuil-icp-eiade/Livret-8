@@ -61,23 +61,22 @@ function rechercherVideos() {
     afficherVideos(resultats);
 
 }
-
 function lireVideo(fichier) {
 
-    const zone = document.getElementById("zoneLecteur");
-    const lecteur = document.getElementById("lecteurVideo");
-    const source = document.getElementById("sourceVideo");
+const zone = document.getElementById("zoneLecteur");
+const lecteur = document.getElementById("lecteurVideo");
+const source = document.getElementById("sourceVideo");
 
-    source.src = fichier;
+source.src = fichier;
 
-    lecteur.load();
+lecteur.load();
 
-    zone.style.display = "block";
+zone.style.display = "block";
 
-    zone.scrollIntoView({
-        behavior:"smooth",
-        block:"center"
-    });
+zone.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
 
 }
 
