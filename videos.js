@@ -17,7 +17,7 @@ const videos = [
 },
     {
     titre: "MITRACLIP",
-    fichier: "videos/cardiologie/clip_mitral.mp4",
+    fichier: "videos/cardiologie/clip_mitral1.mp4",
     miniature: "miniatures/cardiologie/mitraclip.jpg",
     motsCles: [
         "tmvr",
