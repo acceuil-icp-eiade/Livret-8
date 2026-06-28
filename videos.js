@@ -82,6 +82,22 @@ const videos = [
         "froid"
     
     ]
-    }
+    },
+        {
+    titre: "assistanceventriculairegauche",
+    fichier: "videos/cardiologie/heartmate.mp4",
+    miniature: "miniatures/cardiologie/heartmate.png",
+    motsCles: [
+        "assistance",
+        "gauche",
+        "artificiel",
+        "chirurgie",
+        "pompe",
+        "batterie",
+        "transplantation",
+        "cardiaque"
+    
+    ]
+        }
 ];
 
