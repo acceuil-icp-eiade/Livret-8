@@ -520,6 +520,34 @@ allowfullscreen>
 </div>
 </div>
     </div>
+
+    <div class="card" id="videotheque">
+
+<h2>🎥 VIDÉOTHÈQUE</h2>
+
+<input 
+type="text" 
+id="rechercheVideo"
+placeholder="🔍 Rechercher une vidéo..."
+onkeyup="rechercherVideos()">
+
+
+<div id="listeVideos" class="video-grid"></div>
+
+
+<video 
+id="lecteurVideo" 
+controls 
+width="100%" 
+style="display:none; margin-top:20px;">
+
+<source id="sourceVideo" src="" type="video/mp4">
+
+Votre navigateur ne supporte pas la vidéo.
+
+</video>
+
+    </div>
     
   <div class="card welcome-card">
 
@@ -545,7 +573,10 @@ Votre avis est essentiel pour améliorer l’accueil des étudiants.
 <footer>
 Institut Cœur Poumon – Bloc opératoire
 </footer>
-    
+       
+<script src="videos.js"></script>
+<script src="videotheque.js"></script>
+       
 <script src="script.js"></script>
 
    </body>
