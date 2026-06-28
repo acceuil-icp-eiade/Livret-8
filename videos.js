@@ -84,7 +84,7 @@ const videos = [
     ]
     },
         {
-    titre: "LVAD chirurgie",
+    titre: "chirurgie d'assistance gauche",
     fichier: "videos/cardiologie/heartmate.mp4",
     miniature: "miniatures/cardiologie/heartmate.jpg",
     motsCles: [
