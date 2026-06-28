@@ -81,3 +81,6 @@ function lireVideo(fichier) {
     });
 
 }
+window.onload = function(){
+    afficherVideos(videos);
+};
