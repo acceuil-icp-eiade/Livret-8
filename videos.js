@@ -33,3 +33,26 @@ const videos = [
 }
 
 ];
+{
+    titre:"",
+    fichier:"",
+    miniature:"",
+    motsCles:[
+        "",
+        "",
+        "",
+        ""
+    ]
+},
+
+{
+    titre:"",
+    fichier:"",
+    miniature:"",
+    motsCles:[
+        "",
+        "",
+        "",
+        ""
+    ]
+},
