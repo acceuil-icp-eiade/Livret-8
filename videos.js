@@ -17,7 +17,7 @@ const videos = [
 },
 
 {
-    titre: "Ablation de FA par cathéter",
+    titre: "Ablation de FA par radiofréquence",
     fichier: "videos/cardiologie/FA_ablation_catheter.mp4",
     miniature: "miniatures/cardiologie/fa.jpg",
     motsCles: [
