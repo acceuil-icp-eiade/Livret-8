@@ -13,6 +13,7 @@ function afficherVideos(liste) {
     liste.forEach(video => {
 
         const carte = document.createElement("div");
+        carte.onclick = () => lireVideo(video.fichier);
         carte.className = "video-card";
 
         carte.innerHTML = `
