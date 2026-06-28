@@ -3,7 +3,7 @@ const videos = [
 {
     titre: "TAVI",
     fichier: "videos/cardiologie/TAVI.mp4",
-    miniature: "miniatures/cardiologie/tavi.jpg",
+    miniature: "miniatures/cardiologie/tavi.png",
     motsCles: [
         "tavi",
         "valve",
@@ -19,7 +19,7 @@ const videos = [
 {
     titre: "Ablation de FA par cathéter",
     fichier: "videos/cardiologie/FA_ablation_catheter.mp4",
-    miniature: "miniatures/cardiologie/fa.jpg",
+    miniature: "miniatures/cardiologie/fa.png",
     motsCles: [
         "fa",
         "fibrillation",
