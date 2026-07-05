@@ -113,6 +113,22 @@ const videos = [
         "cardiaque"
     
     ]
-        }
+        },
+    {
+    titre: "CARMAT",
+    fichier: "videos/cardiologie/carmat2.mp4",
+    miniature: "miniatures/cardiologie/carmat.jpg",
+    motsCles: [
+        "assistance",
+        "cœur",
+        "artificiel",
+        "chirurgie",
+        "pompe",
+        "batterie",
+        "transplantation",
+        "cardiaque"
+    
+    ]
+    }
 ];
 
