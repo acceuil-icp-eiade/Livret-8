@@ -1315,7 +1315,7 @@ body{
 
 /* Zone de lecture vidéo */
 #zoneListeVideos {
-    max-height: 350px;
+    max-height: 290px;
     overflow-y: auto;
     margin-top: 20px;
 }
