@@ -523,31 +523,29 @@ allowfullscreen>
 
     <div class="card" id="videotheque">
 
-<h2>🎥 VIDÉOTHÈQUE</h2>
+    <h2>🎥 VIDÉOTHÈQUE</h2>
 
-<input 
-type="text" 
-id="rechercheVideo"
-placeholder="🔍 Rechercher une vidéo..."
-onkeyup="rechercherVideos()">
+    <input
+        type="text"
+        id="rechercheVideo"
+        placeholder="🔍 Rechercher une vidéo..."
+        onkeyup="rechercherVideos()">
 
+    <!-- Zone qui défile -->
+    <div id="zoneListeVideos">
+        <div id="listeVideos" class="video-grid"></div>
+    </div>
 
-<div id="listeVideos" class="video-grid"></div>
-        
-  <div id="zoneLecteur" style="display:none; margin-top:20px;">
+    <!-- Lecteur vidéo -->
+    <div id="zoneLecteur" style="display:none; margin-top:20px;">
 
-<video 
-id="lecteurVideo" 
-controls 
-width="100%">
-
-<source id="sourceVideo" src="" type="video/mp4">
-
-</video>
+        <video id="lecteurVideo" controls width="100%">
+            <source id="sourceVideo" src="" type="video/mp4">
+        </video>
 
     </div>
-</div>
 
+    </div>
     
   <div class="card welcome-card">
 
