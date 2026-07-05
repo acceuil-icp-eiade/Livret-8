@@ -33,7 +33,7 @@ const videos = [
         {
     titre: "VALVE TRICUSPIDE",
     fichier: "videos/cardiologie/valvetricuspide.mp4",
-    miniature: "miniatures/cardiologie/tricuspide.jpg",
+    miniature: "miniatures/cardiologie/tricuspide.png",
     motsCles: [
         "ttvr",
         "valve",
