@@ -1311,7 +1311,31 @@ body{
     h2 {
   text-shadow: 0 1px 1px rgba(0,0,0,0.04);
     }
+/* Petite zone de la vidéo "Visiter le bloc opératoire" */
+#videoContainer {
+    width: 100%;
+    margin-top: 12px;
+    overflow: hidden;
+    border-radius: 14px;
+}
 
+#videoContainer video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    border-radius: 14px;
+}
+
+/* Vidéo cachée */
+#videoContainer.hidden {
+    display: none;
+}
+
+/* Vidéo affichée */
+#videoContainer.show {
+    display: block;
+}
 
 /* Zone de lecture vidéo */
 #zoneListeVideos {
