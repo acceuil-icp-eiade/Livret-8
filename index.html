@@ -502,22 +502,23 @@ target="_blank">
 </div>
 </div>
     <div>
-<div class="card" id="visite">
-<h2>🎥 VISITE DU SERVICE</h2>
+        <div class="card" id="visite">
+    <h2>🎥 VISITE DU SERVICE</h2>
 
-<button id="videoBtn" class="video-btn" onclick="toggleVideo()">
-▶️  visiter le bloc opératoire 
-</button>
-<div id="videoContainer" class="video hidden">
+    <button id="videoBtn" class="video-btn" onclick="toggleVideo()">
+        ▶️ Visiter le bloc opératoire
+    </button>
 
-<iframe id="videoFrame"
-src="https://www.youtube.com/embed/VWjXi7yBJlY"
-frameborder="0"
-allow="fullscreen; autoplay"
-allowfullscreen>
-</iframe>
-</div>
-</div>
+    <div id="videoContainer" class="video hidden">
+
+        <video id="videoPlayer" controls playsinline>
+            <source src="videos/visite_bloc_github.mp4" type="video/mp4">
+            Votre navigateur ne peut pas lire cette vidéo.
+        </video>
+
+    </div>
+        </div>
+
     </div>
 
     <div class="card" id="videotheque">
