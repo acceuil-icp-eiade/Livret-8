@@ -81,32 +81,55 @@ menu.classList.remove("open");
 }
 });
 }
-
 function toggleVideo() {
-const video = document.getElementById("videoContainer");
-const iframe = document.getElementById("videoFrame");
-const button = document.getElementById("videoBtn");
+    const videoContainer = document.getElementById("videoContainer");
+    const videoPlayer = document.getElementById("videoPlayer");
+    const button = document.getElementById("videoBtn");
 
-if (video.classList.contains("show")) {
-video.classList.remove("show");
-setTimeout(() => video.classList.add("hidden"), 400);
-button.innerHTML = "▶️ Voir la visite du bloc";
-} else {
-video.classList.remove("hidden");
-setTimeout(() => video.classList.add("show"), 10);
-button.innerHTML = "❌ Fermer la vidéo";
+    if (videoContainer.classList.contains("show")) {
 
-setTimeout(() => {
-if (iframe.requestFullscreen) {
-iframe.requestFullscreen();
-} else if (iframe.webkitRequestFullscreen) {
-iframe.webkitRequestFullscreen();
-} else if (iframe.msRequestFullscreen) {
-iframe.msRequestFullscreen();
+        // Fermer la vidéo
+        videoContainer.classList.remove("show");
+
+        setTimeout(() => {
+            videoContainer.classList.add("hidden");
+            videoPlayer.pause();
+            videoPlayer.currentTime = 0;
+        }, 400);
+
+        button.innerHTML = "▶️ Visiter le bloc opératoire";
+
+    } else {
+
+        // Afficher la vidéo
+        videoContainer.classList.remove("hidden");
+
+        setTimeout(() => {
+            videoContainer.classList.add("show");
+        }, 10);
+
+        button.innerHTML = "❌ Fermer la vidéo";
+
+        // Démarrer la vidéo après le clic
+        videoPlayer.play();
+
+        // Passage en plein écran
+        setTimeout(() => {
+
+            if (videoPlayer.requestFullscreen) {
+                videoPlayer.requestFullscreen();
+
+            } else if (videoPlayer.webkitEnterFullscreen) {
+                videoPlayer.webkitEnterFullscreen();
+
+            } else if (videoPlayer.webkitRequestFullscreen) {
+                videoPlayer.webkitRequestFullscreen();
+            }
+
+        }, 500);
+    }
 }
-}, 500);
-}
-}
+
 
 function showDisclaimer() {
 document.getElementById("disclaimer").classList.add("show");
